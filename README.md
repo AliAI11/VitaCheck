@@ -1,14 +1,10 @@
-================================================================================
 VitaCheck: Symptom-Based Vitamin Deficiency Detection & Personalized Meal Planning
-================================================================================
 
 Authors: Afeef Ali, Sanjana Gollu, Aarav Bafna, Natalie Rogers, Tiffany Widjaja
 Course:  Virginia Tech HCI Capstone
 Date:    April 2026
 
-================================================================================
 DESCRIPTION
-================================================================================
 
 VitaCheck is an end-to-end machine learning pipeline that classifies vitamin
 deficiency type from patient-reported symptoms and demographics, then generates
@@ -24,9 +20,7 @@ are generated via Groq's free API using Llama 3.3 70B.
 
 Best model: XGBoost (Tuned) — 84.1% accuracy, 0.70 macro F1
 
-================================================================================
 PACKAGE CONTENTS
-================================================================================
 
 VitaCheck/
 ├── README.md                   - this file
@@ -45,9 +39,7 @@ VitaCheck/
 │       ├── target_label_encoder.joblib - fitted labelencoder
 │       └── feature_info.json           - feature metadata
 
-================================================================================
 INSTALLATION
-================================================================================
 
 requirements:
 - python 3.10+
@@ -66,9 +58,7 @@ for the meal plan feature:
 - create a free groq api key at https://console.groq.com/keys
 - set it as environment variable: export GROQ_API_KEY="gsk_..."
 
-================================================================================
 USAGE — RUN LOCALLY
-================================================================================
 
 1. navigate to the SRC directory:
 
@@ -86,9 +76,7 @@ USAGE — RUN LOCALLY
 5. view diagnosis on the "diagnosis" tab and meal plan on the
    "personalized meal plan" tab
 
-================================================================================
 USAGE — HUGGINGFACE SPACES (LIVE DEMO)
-================================================================================
 
 the app is deployed at:
 
@@ -96,9 +84,7 @@ the app is deployed at:
 
 no installation needed — just visit the link and use the interface.
 
-================================================================================
 DATASET
-================================================================================
 
 vitamin deficiency disease prediction dataset (kaggle, january 2026)
 - 4,000 patient records, 34 columns
@@ -108,9 +94,7 @@ vitamin deficiency disease prediction dataset (kaggle, january 2026)
 the dataset is NOT included in this package to keep the file size small.
 to retrain, the notebook downloads it automatically via kagglehub.
 
-================================================================================
 TECHNOLOGIES
-================================================================================
 
 - xgboost + lightgbm + scikit-learn (classification)
 - smote-nc (class imbalance handling)
